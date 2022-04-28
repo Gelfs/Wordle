@@ -217,7 +217,7 @@ function submit(guess, word) {
   word = word.toLowerCase();
   console.log(guess + "/" + word);
   setTimeout(function(){
-    if (guess == word) {alert("Good Job.")}
+    if (guess == word) {console.log("Good.")}
 },5000);
 
 }
