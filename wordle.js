@@ -218,8 +218,8 @@ function submit(guess, word) {
   console.log(guess + "/" + word);
   
   if (guess == word) {setTimeout(function(){
- 	alert("Sup!"); 
-}, 4000);}
+ 	alert("Oustanding Job!"); 
+}, 2000);}
 }
 
 
