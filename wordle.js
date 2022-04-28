@@ -219,7 +219,3 @@ function submit(guess, word) {
   
   if (guess == word) {setTimeout(function(){alert("Oustanding Job!");}, 2000);}}
 
-
-
-if(alert('Outstanding Job!')){}
-else    window.location.reload(); 
