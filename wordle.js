@@ -217,6 +217,8 @@ function submit(guess, word) {
   word = word.toLowerCase();
   console.log(guess + "/" + word);
   
-  if (guess == word) {setTimeout(function(){alert("Oustanding Job!");}, 2000);}}
-
+  if (guess == word) {setTimeout(function(){alert("Oustanding Job!");}, 2000);}
+    
   if(!alert('Alert For your User!')){window.location.reload();}
+
+ 
