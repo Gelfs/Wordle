@@ -115,7 +115,7 @@ function processInput(e) {
     if (!gameOver && row == height) {
         gameOver = true;
         document.getElementById("answer").innerText = word;
-        setTimeout(function(){alert("Honestly Trash."); window.location.reload()}, 2000);
+        setTimeout(function(){alert("Nice Try. The word was: " + word); window.location.reload()}, 2000);
         
     }
 }
