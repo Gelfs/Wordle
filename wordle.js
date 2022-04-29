@@ -113,7 +113,8 @@ function processInput(e) {
     }
 
     if (!gameOver && row == height) {
-        gameOver = true;
+        gameOver = true;\
+        sessionStorage.clear();
         setTimeout(function(){alert("Nice Try. The word was: " + word); window.location.reload()}, 1000);
         
     }
