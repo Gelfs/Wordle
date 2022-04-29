@@ -21,7 +21,6 @@ var word = wordList[Math.floor(Math.random()*wordList.length)].toUpperCase();
 
 window.onload = function(){
     intialize();
-    checkCookie();
     title();
 }
 
