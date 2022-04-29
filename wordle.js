@@ -5,6 +5,7 @@ var width = 5; //length of the word
 var row = 0; //current guess (attempt #)
 var col = 0; //current letter for that attempt
 
+var audio = new Audio('Tada-sound.mp3');
 
 var gameOver = false;
 // var word = "SQUID";
@@ -221,6 +222,7 @@ function submit(guess, word) {
  
   if (guess == word) {
       highscore();
+      audio.play();
       setTimeout(function(){
           alert("Outstanding Job! Streak: " + sessionStorage.clickcount); 
           window.location.reload()}, 1000);}
