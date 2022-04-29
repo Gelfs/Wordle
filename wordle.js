@@ -22,6 +22,7 @@ var word = wordList[Math.floor(Math.random()*wordList.length)].toUpperCase();
 window.onload = function(){
     intialize();
     checkCookie();
+    title();
 }
 
 
@@ -239,6 +240,10 @@ function highscore() {
         sessionStorage.clickcount = 1;
         }
     }
+}
+
+function title() {
+    document.getElementById("title").innerHTML = "Wordle #" + sessionStorage.clickcount;
 }
 
 
