@@ -219,8 +219,15 @@ function submit(guess, word) {
   console.log(guess + "/" + word);
  
   if (guess == word) {
-      sessionStorage.streakdisplay = Number(sessionStorage.streakdisplay)+1;
-      setTimeout(function(){alert("Outstanding Job! Streak: " + sessionStorage.streakdisplay); window.location.reload()}, 1000);}
+      setTimeout(function(){
+          alert("Outstanding Job! Streak: " + sessionStorage.clickcount); 
+          window.location.reload()}, 1000);}
+      if (typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+             sessionStorage.clickcount = 1;
+        }
     
 }
 
