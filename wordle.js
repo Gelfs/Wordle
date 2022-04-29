@@ -217,7 +217,7 @@ function update() {
 }
 function submit(guess, word, streak) {
   word = word.toLowerCase();
-  streak = streak + 1
+  streak = streak+1;
   console.log(guess + "/" + word);
   
   if (guess == word) {setTimeout(function(){alert("Outstanding Job! Streak: " + streak); window.location.reload()}, 1000);}
