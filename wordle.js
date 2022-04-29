@@ -242,7 +242,7 @@ function highscore() {
 }
 
 function title() {
-    if (sessionStorage.clickcount >= 1) {
+    if (sessionStorage.clickcount != undefined) {
         document.getElementById("title").innerHTML = "Wordle #" + sessionStorage.clickcount;
     }
 }
