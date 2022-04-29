@@ -6,6 +6,7 @@ var row = 0; //current guess (attempt #)
 var col = 0; //current letter for that attempt
 
 var Waudio = new Audio('Tada-sound.mp3');
+var Laudio = new Audio('fail-trombone-01.mp3');
 
 var gameOver = false;
 // var word = "SQUID";
@@ -116,6 +117,7 @@ function processInput(e) {
     if (!gameOver && row == height) {
         gameOver = true;
         sessionStorage.clear();
+        Laudio.play();
         setTimeout(function(){alert("Nice Try. The word was: " + word); window.location.reload()}, 1000);
         
     }
