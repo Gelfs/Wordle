@@ -232,6 +232,7 @@ function highscore() {
         } else {
         sessionStorage.clickcount = 1;
         }
+    }
 }
 
 
