@@ -21,6 +21,7 @@ var word = wordList[Math.floor(Math.random()*wordList.length)].toUpperCase();
 
 window.onload = function(){
     intialize();
+    checkCookie();
 }
 
 
@@ -275,7 +276,7 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome Back " + Cory S.);
+    alert("Welcome Back " + username);
   } else {
      user = prompt("Please enter your name:","");
      if (user != "" && user != null) {
