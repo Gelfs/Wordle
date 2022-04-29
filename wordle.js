@@ -216,6 +216,7 @@ function update() {
 }
 function submit(guess, word) {
   var streak = 0 
+  var streakdisplay = 0
   word = word.toLowerCase();
   streak++;
   localStorage.setItem("chi", streak);
