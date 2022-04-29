@@ -5,7 +5,6 @@ var width = 5; //length of the word
 var row = 0; //current guess (attempt #)
 var col = 0; //current letter for that attempt
 
-var streak = 0;
 
 var gameOver = false;
 // var word = "SQUID";
@@ -215,9 +214,10 @@ function update() {
 
 
 }
-function submit(guess, word, streak) {
+function submit(guess, word) {
+  var streak = 0 
   word = word.toLowerCase();
-  streak = streak+1;
+  streak++;
   console.log(guess + "/" + word);
   
   if (guess == word) {setTimeout(function(){alert("Outstanding Job! Streak: " + streak); window.location.reload()}, 1000);}
