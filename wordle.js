@@ -215,12 +215,12 @@ function update() {
 
 }
 function submit(guess, word) {
-  var streak = 0 
-  var streakdisplay = 0
+  var streak = 0;
+  var streakdisplay = " ";
   word = word.toLowerCase();
   streak++;
-  localStorage.setItem("chi", streak);
-  streakdisplay = localStorage.getItem("chi");
+  localStorage.setItem("high", streak);
+  streakdisplay = localStorage.getItem("high");
   console.log(guess + "/" + word);
   
   if (guess == word) {setTimeout(function(){alert("Outstanding Job! Streak: " + streakdisplay); window.location.reload()}, 1000);}
