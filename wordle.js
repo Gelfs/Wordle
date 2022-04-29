@@ -242,7 +242,9 @@ function highscore() {
 }
 
 function title() {
-    document.getElementById("title").innerHTML = "Wordle #" + sessionStorage.clickcount;
+    if (sessionStorage.clickcount >= 1) {
+        document.getElementById("title").innerHTML = "Wordle #" + sessionStorage.clickcount;
+    }
 }
 
 
