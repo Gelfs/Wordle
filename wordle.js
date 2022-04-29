@@ -219,18 +219,20 @@ function submit(guess, word) {
   console.log(guess + "/" + word);
  
   if (guess == word) {
+      highscore();
       setTimeout(function(){
           alert("Outstanding Job! Streak: " + sessionStorage.clickcount); 
           window.location.reload()}, 1000);}
-      if (typeof(Storage) !== "undefined") {
+}
+
+function highscore() {
+    if (typeof(Storage) !== "undefined") {
         if (sessionStorage.clickcount) {
             sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
         } else {
-             sessionStorage.clickcount = 1;
+        sessionStorage.clickcount = 1;
         }
-    
 }
-
 
 
 
