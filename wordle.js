@@ -218,8 +218,14 @@ function submit(guess, word) {
   var streak = 0 
   word = word.toLowerCase();
   streak++;
+  localStorage.setItem("chi", streak);
+  streakdisplay = localStorage.getItem("chi");
   console.log(guess + "/" + word);
   
-  if (guess == word) {setTimeout(function(){alert("Outstanding Job! Streak: " + streak); window.location.reload()}, 1000);}
+  if (guess == word) {setTimeout(function(){alert("Outstanding Job! Streak: " + streakdisplay); window.location.reload()}, 1000);}
     
 }
+
+
+
+
