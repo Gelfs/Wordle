@@ -253,5 +253,5 @@ function title() {
     }
 }
 
-document.getElementsByClassName(".sweet-alert button.confirm").onclick = function() {window.location.reload();};
+document.getElementsByClassName(".sweet-alert button.confirm[disabled]").onclick = function() {window.location.reload();};
 
