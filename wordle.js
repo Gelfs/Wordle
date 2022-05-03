@@ -251,4 +251,4 @@ function won(){
 	swal("Congrats!", ", You got the correct word! Streak: " + sessionStorage.clickcount, "success");
 }
 
-document.getElementsByClassName("confirm").onclick = function() {window.location.reload();};
+document.getElementsByClassName("confirm").onclick = function() {window.location.reload();}
