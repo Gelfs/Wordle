@@ -231,7 +231,11 @@ function submit(guess, word) {
       setTimeout(function() {window.location.reload()}, 3000);
      
 }
-
+	
+function won(){
+	swal("Congrats!", ", You got the correct word! Streak: " + sessionStorage.clickcount, "success");
+}
+	
 function highscore() {
     if (typeof(Storage) !== "undefined") {
         if (sessionStorage.clickcount) {
@@ -248,7 +252,4 @@ function title() {
     }
 }
 
-function won(){
-	swal("Congrats!", ", You got the correct word! Streak: " + sessionStorage.clickcount, "success");
-	}
-}
+
