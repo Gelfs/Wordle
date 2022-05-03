@@ -253,5 +253,4 @@ function title() {
     }
 }
 
-document.getElementsByClassName(".sweet-alert button.confirm[disabled]").onclick = function() {window.location.reload();};
 
