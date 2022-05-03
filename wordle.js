@@ -227,7 +227,7 @@ function submit(guess, word) {
       highscore();
       Waudio.play();
       setTimeout(function(){
-          alert("Outstanding Job! Streak: " + sessionStorage.clickcount); 
+          won(); 
           window.location.reload()}, 1000);}
 }
 
@@ -247,5 +247,7 @@ function title() {
     }
 }
 
-
+function won(){
+	swal("Congrats!", ", You got the correct word! Streak: " + sessionStorage.clickcount, "success");
+}
 
