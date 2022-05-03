@@ -226,9 +226,9 @@ function submit(guess, word) {
   if (guess == word) {
       highscore();
       Waudio.play();
+      won();
       setTimeout(function(){
-          won(); 
-          window.location.reload()}, 1000);}
+          window.location.reload(); }, 1000);}
 }
 
 function highscore() {
