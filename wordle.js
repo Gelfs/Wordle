@@ -228,7 +228,7 @@ function submit(guess, word) {
       highscore();
       Waudio.play();
       won();
-      setTimeout(function() {window.location.reload()}, 3000);
+      setTimeout(function() {window.location.reload();}, 3000);
      
 }
 	
