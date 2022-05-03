@@ -254,3 +254,7 @@ function won(){
 document.getElementsByClassName("confirm").onclick = function() {
 	window.location.reload();
 }
+var el = document.querySelectorAll("confirm"); // this element contains more than 1 DOMs.
+    for(var i =0; i < el.length; i++) {
+        el[i].onclick = function() { console.log("target name should be here")};
+    }
