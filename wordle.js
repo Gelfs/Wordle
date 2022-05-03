@@ -255,3 +255,4 @@ var el = document.querySelectorAll("confirm"); // this element contains more tha
     for(var i =0; i < el.length; i++) {
         el[i].onclick = function() { console.log("target name should be here")};
     }
+}
