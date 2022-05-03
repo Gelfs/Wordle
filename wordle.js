@@ -250,4 +250,5 @@ function title() {
 
 function won(){
 	swal("Congrats!", ", You got the correct word! Streak: " + sessionStorage.clickcount, "success");
+	}
 }
