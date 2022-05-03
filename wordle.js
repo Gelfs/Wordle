@@ -228,7 +228,7 @@ function submit(guess, word) {
       Waudio.play();
       won();
       setTimeout(function(){
-          window.location.reload(); }, 1000);}
+          window.location.reload(); }, 10000);}
 }
 
 function highscore() {
