@@ -253,5 +253,5 @@ function title() {
     }
 }
 
-document.getElementsByClassName("confirm").onclick = function() {window.location.reload();};
+document.getElementsByClassName("button.confirm").onclick = function() {window.location.reload();};
 
