@@ -120,7 +120,8 @@ function processInput(e) {
         gameOver = true;
         sessionStorage.clear();
         Laudio.play();
-        setTimeout(function(){alert("Nice Try. The word was: " + word); window.location.reload()}, 1000);
+	lose();
+        setTimeout(function(){window.location.reload();}, 1000);
         
     }
 }
@@ -236,6 +237,11 @@ function submit(guess, word) {
 function won(){
 	swal("Congrats!", ", You got the correct word! Streak: " + sessionStorage.clickcount, "success");
 }
+
+function lose(){
+	swal("You Failed!", ", Incorrect word! You lost your streak: " + sessionStorage.clickcount, "error");
+}
+
 	
 function highscore() {
     if (typeof(Storage) !== "undefined") {
