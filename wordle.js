@@ -121,7 +121,7 @@ function processInput(e) {
         sessionStorage.clear();
         Laudio.play();
 	lose();
-        setTimeout(function(){window.location.reload();}, 1000);
+        setTimeout(function(){window.location.reload();}, 5000);
         
     }
 }
@@ -239,7 +239,7 @@ function won(){
 }
 
 function lose(){
-	swal("You Failed!", ", Incorrect word! You lost your streak: " + sessionStorage.clickcount, "error");
+	swal("You Failed!", ", The word was: " + word + "Steak: 0, "error");
 }
 
 	
