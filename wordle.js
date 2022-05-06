@@ -238,7 +238,7 @@ function won(){
 	swal("Congrats!", ", You got the correct word! Streak: " + sessionStorage.clickcount, "success");
 }
 
-function fail(){
+function lose(){
 	swal("OOPS!", ", The word is: " + word, "error");
 }
 
