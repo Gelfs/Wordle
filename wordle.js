@@ -238,9 +238,10 @@ function won(){
 	swal("Congrats!", ", You got the correct word! Streak: " + sessionStorage.clickcount, "success");
 }
 
-function lose(){
-	swal("You Failed!", ", The word was: " + word + "Steak: 0, "error");
+function fail(){
+	swal("OOPS!", ", The word is: " + word, "error");
 }
+
 
 	
 function highscore() {
